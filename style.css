@@ -97,7 +97,7 @@ nav {
   bottom: -150px;
 }
 .top-content-text {
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;
