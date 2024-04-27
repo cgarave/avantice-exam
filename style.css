@@ -31,6 +31,7 @@ nav {
 }
 .banner,
 .top-content-images {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -39,7 +40,7 @@ nav {
 #banner-image,
 #top-players-image,
 #top-champions-image {
-  width: 450px;
+  width: 100%;
   height: auto;
 }
 #apex-icon {
@@ -56,6 +57,8 @@ nav {
   padding: 30px;
   font-weight: bold;
   color: white;
+  /* background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.1), transparent);
+  z-index: -1; */
 }
 .banner-content > p {
   font-size: 1.5rem;
@@ -94,21 +97,51 @@ nav {
   bottom: -150px;
 }
 .top-content-text {
+  overflow-x: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 80px;
-  z-index: 99;
   color: white;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 50, 255, 0.1));
+}
+.top-content-text::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -120px;
+  left: -300px;
+  background-color: #0084ff;
+  border-radius: 100%;
+  filter: blur(100px);
+  opacity: 0.3;
+  z-index: -1;
+}
+.top-content-text::after {
+  content: "";
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: -120px;
+  right: -300px;
+  background-color: #0084ff;
+  border-radius: 100%;
+  filter: blur(100px);
+  opacity: 0.3;
+  z-index: -1;
 }
 .top-content-text h1 {
   font-size: 2.5rem;
+  z-index: -1;
 }
 .top-content-text h2 {
   font-size: 1.4rem;
 }
 .top-content-text p {
-  margin: 40px 20px;
+  width: auto;
+  padding: 40px 20px;
   font-size: 0.8rem;
   text-align: justify;
 }
@@ -118,6 +151,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
+  width: 100%;
   font-family: "Jost", sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -136,14 +170,22 @@ nav {
   font-size: 1rem;
 }
 .input-container input {
+  height: 35px;
   width: 200px;
   border: 1px solid white;
+  border-radius: 0;
   background-color: transparent;
   padding: 5px;
   outline: none;
   color: white;
 }
+.input-container input::placeholder {
+  font-size: 8px;
+}
 #select-container {
+  display: flex;
+  justify-content: center;
+  height: 35px;
   width: 200px;
   border: 1px solid white;
   background-color: transparent;
@@ -155,6 +197,7 @@ nav {
   outline: none;
   border: none;
   color: white;
+  font-size: 8px;
 }
 .input-container button {
   padding: 8px 8px;
