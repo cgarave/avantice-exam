@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #111;
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: absolute;
+  color: white;
+  z-index: 99;
+}
+#translate {
+  padding: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-weight: 400;
+}
+.banner,
+.top-content-images {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#banner-image,
+#top-players-image,
+#top-champions-image {
+  width: 450px;
+  height: auto;
+}
+#apex-icon {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  bottom: -20px;
+}
+.banner-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-weight: bold;
+  color: white;
+}
+.banner-content > p {
+  font-size: 1.5rem;
+}
+.banner-content :nth-child(2) {
+  font-size: 2.5rem;
+}
+.banner-content div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content div p {
+  position: absolute;
+  z-index: 99;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #111;
+}
+.banner-content button {
+  padding: 10px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#top-players-image {
+  filter: grayscale();
+}
+#top-champions-image {
+  position: absolute;
+  bottom: -150px;
+}
+.top-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 99;
+  color: white;
+}
+.top-content-text h1 {
+  font-size: 2.5rem;
+}
+.top-content-text h2 {
+  font-size: 1.4rem;
+}
+.top-content-text p {
+  margin: 40px 20px;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.footer-content {
+  background-image: url("./assets/footer-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.input-container h1 {
+  font-size: 1rem;
+}
+.input-container input {
+  width: 200px;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 5px;
+  outline: none;
+  color: white;
+}
+#select-container {
+  width: 200px;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 5px;
+}
+#select-container select {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+}
+.input-container button {
+  padding: 8px 8px;
+  width: fit-content;
+  background-color: #992020;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 8px;
+}
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 8px;
+  font-weight: 200;
+  fill: white;
+}
