@@ -9,6 +9,7 @@
 body {
   background-color: #111;
   overflow-x: hidden;
+  top: 0 !important;
 }
 nav {
   width: 100%;
@@ -20,15 +21,7 @@ nav {
   color: white;
   z-index: 99;
 }
-#translate {
-  padding: 5px;
-  outline: none;
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 5px;
-  color: white;
-  font-weight: 400;
-}
+
 .banner,
 .top-content-images {
   width: 100%;
@@ -215,4 +208,25 @@ nav {
   font-size: 8px;
   font-weight: 200;
   fill: white;
+}
+
+/* Remove iframe, hide unnecessary elements*/
+.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
+  display: none !important;
+}
+.skiptranslate.goog-te-gadget span {
+  display: none;
+}
+.skiptranslate.goog-te-gadget {
+  font-size: 0px;
+}
+/* drop down */
+.goog-te-combo {
+  width: 100px;
+  padding: 5px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
 }
